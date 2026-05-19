@@ -1,0 +1,18 @@
+SYSTEM_NAME: PLACEHOLDER
+
+PATH_TO_TARGET_PROJECT: PLACEHOLDER
+
+# Document Tokenizer Configuration
+# ["custom path"|"auto"]
+PATH_TO_XML: PLACEHOLDER
+PATH_TO_DOC_RESULTS: PLACEHOLDER
+
+# Analyzer's General Configurations
+PATH_TO_OUTPUT: "auto"        # ["custom path"|"auto"]
+PROMPT_TEMPLATE_PATH: "auto"  # ["custom path"|"auto"]
+PROMPT_VERSION: "v2"           # ["v1"|"v2"]
+
+PROVIDER_CONFIG:
+  provider: openai
+  model: gpt-5.3-codex
+  api_key: PLACEHOLDER

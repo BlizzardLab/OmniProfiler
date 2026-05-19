@@ -1,0 +1,28 @@
+# This file provides a demo configuration for analyzing MySQL
+SYSTEM_NAME: MySQL
+
+# 1. Download MySQL: https://downloads.mysql.com/archives/get/p/23/file/mysql-boost-8.3.0.tar.gz
+# 2. Extract the downloaded file and set the path below to the extracted folder 
+PATH_TO_TARGET_PROJECT: ./mysql-8.3.0
+
+# Document Tokenizer Configuration
+# ["custom path"|"auto"]
+# 3. Generate XML files using doxygen
+# 4. Set the path below to the XML output directory (PATH_TO_XML) and run doc_tokenizer
+PATH_TO_XML: ./mysql-8.3.0/build/doxygen/xml
+PATH_TO_DOC_RESULTS: doc-results  # auto when running doc_tokenizer, otherwise set to the output directory of doc_tokenizer
+# PATH_TO_DOC_RESULTS: mysql-doc-results  # NOTE: the output directory of doc_tokenizer after running doc_tokenizer
+
+# Analyzer's General Configurations
+PATH_TO_OUTPUT: llm-results        # ["custom path"|"auto"]
+# If "auto", the system will create an output directory, and everything will be cached and saved here
+# If "custom path", the system will first try to reuse any existing cache and output in the specified directory
+# When running 
+
+PROMPT_TEMPLATE_PATH: "auto"  # ["custom path"|"auto"]
+PROMPT_VERSION: "v2"           # ["v1"|"v2"]
+
+PROVIDER_CONFIG:
+  provider: openai
+  model: gpt-5.2
+  api_key: PLACEHOLDER

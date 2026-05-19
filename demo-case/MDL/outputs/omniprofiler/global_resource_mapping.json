@@ -1,0 +1,15 @@
+{
+    "rec_t": 0,
+    "btr_cur_t": 1,
+    "dict_index_t": 2,
+    "page_t": 3,
+    "buf_block_t": 4,
+    "buf_page_t": 5,
+    "buf_pool_t": 6,
+    "MDL_request": 7,
+    "MDL_context": 8,
+    "MDL_context_owner": 9,
+    "MDL_lock": 10,
+    "MDL_map": 11,
+    "purge_node_t": 12
+}
